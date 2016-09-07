@@ -9,7 +9,7 @@ public class Binary_digit
     {
         ans=0;
         inc=0;
-        val=3;
+        val=checking;
         while(input>0 || val>0)
         {
             sta[inc]=input%2;
@@ -23,11 +23,6 @@ public class Binary_digit
         {
             return 0;
         }
-        else
-            if(inc<checking)
-            {
-                return 1;
-            }
         for(i=inc-1;i>=0;i--)
         {
             ans=(ans*10)+sta[i];
